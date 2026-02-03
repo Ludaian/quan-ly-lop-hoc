@@ -56,7 +56,7 @@
         /* MODAL COMMON */
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .modal-overlay.open { opacity: 1; pointer-events: all; }
-        .modal-content { background: white; padding: 20px; rounded: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transform: scale(0.95); transition: transform 0.3s; max-height: 95vh; overflow-y: auto; }
+        .modal-content { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transform: scale(0.95); transition: transform 0.3s; max-height: 95vh; overflow-y: auto; }
         .modal-overlay.open .modal-content { transform: scale(1); }
 
         /* DUTY MODAL SPECIFIC */
@@ -67,7 +67,7 @@
         .duty-selected-class::after { content: 'Trực Lớp'; position: absolute; right: -70px; top: 50%; transform: translateY(-50%); color: #166534; font-size: 0.75rem; font-weight: bold; }
         .duty-selected-area { background-color: #ffedd5 !important; border-color: #f97316 !important; }
         .duty-selected-area::after { content: 'Trực Khu Vực'; position: absolute; right: -90px; top: 50%; transform: translateY(-50%); color: #9a3412; font-size: 0.75rem; font-weight: bold; }
-        .role-input { width: 100%; padding: 6px; border: 1px solid #d1d5db; rounded: 4px; font-size: 0.9rem; margin-top: 2px; }
+        .role-input { width: 100%; padding: 6px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 0.9rem; margin-top: 2px; }
         .role-section label { font-size: 0.85rem; font-weight: 600; color: #374151; display: block; margin-top: 8px; }
         .gender-item { display: flex; align-items: center; justify-content: space-between; padding: 4px 0; border-bottom: 1px dashed #e5e7eb; font-size: 0.9rem; }
         .gender-label { cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; transition: all 0.2s; }
